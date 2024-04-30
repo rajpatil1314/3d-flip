@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(255, 145, 0);
+        }
+   .main
+        {
+            height: 500px;
+            width: 500px;
+            perspective: 800px;
+            margin: auto;
+        }
+        .container
+        {
+            height: 100%;
+            width: 100%;
+            transition: transform 0.5s;
+            /* transition: transfrom 0.6s; */
+            transform-style: preserve-3d;
+        }
+        .main:hover .container
+        {
+            transform: rotateY(180deg);
+        }
+        .front,.back
+        {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+        }
+        .front
+        {
+            background-color: aqua;
+            color: black;
+        }
+        .back
+        {
+            background-color: rgb(251, 105, 0);
+            color: white;
+            transform: rotateY(180deg);
+        }
+        .name
+        {
+            margin: auto;
+        }
+
+
+    
+
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="front">
+                <img src="img/images (16).webp" alt="" height="100%" width="100%">
+            </div>
+            <div class="back">
+                <div class="name">
+                    <h2> श्री छत्रपती शिवाजी महाराज 👑
+                    </h2>
+                    <h4>पूर्ण नाव: श्री शिवाजीराजे शहाजीराजे भोसले</h4>
+                    <h4>जन्म: 19 फेब्रुवारी, 1630</h4>
+                    <h4>17 व्या शतकातील भारतात मराठा राज्याची स्थापना केली</h4>
+                    <h4>मृत्यू-3 एप्रिल 1680 </h4>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
